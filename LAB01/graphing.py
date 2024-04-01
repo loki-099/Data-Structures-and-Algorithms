@@ -31,9 +31,9 @@ for num in range (1, 11):
     elif num == 7:
       yValuesFile.write(f"{x**4 - 3*(x**3) + 2*(x**2) - x + 11}\n") #7
     elif num == 8:
-      yValuesFile.write(f"{math.sin(math.radians(x))}\n") #8
+      yValuesFile.write(f"{math.sin(x)}\n") #8
     elif num == 9:
-      yValuesFile.write(f"{math.cos(math.radians(x))}\n") #9
+      yValuesFile.write(f"{math.cos(x)}\n") #9
     elif num == 10:
       yValuesFile.write(f"{x**5 + 4*(x**4) + x**3 - 2*(x**2) + 100}\n") #10
 yValuesFile.close()
