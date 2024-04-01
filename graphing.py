@@ -38,6 +38,7 @@ for num in range (1, 11):
       yValuesFile.write(f"{x**5 + 4*(x**4) + x**3 - 2*(x**2) + 100}\n") #10
 yValuesFile.close()
 
+# Graph the equation, return Y Values
 def graphOne(start, end):
   yValues = []
   count = 0
