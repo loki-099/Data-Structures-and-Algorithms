@@ -5,14 +5,14 @@ print("WELCOME TO IDOL GRAPHS!\nChoose equation to graph:\n1. x² + 7x + 2\n2. 3
 choice = int(input("Enter you choice: "))
 
 xValues = []
-with open("git-proj/xValues.txt", "r") as file:
+with open("xValues.txt", "r") as file:
   for line in file:
     xValues.append(int(line))
 
-yValuesFile = open("git-proj/yValues.txt", "w")
+yValuesFile = open("yValues.txt", "w")
 yValuesFile.write("")
-yValuesFile.close
-yValuesFile = open("git-proj/yValues.txt", "a")
+yValuesFile.close()
+yValuesFile = open("yValues.txt", "a")
 
 for num in range (1, 11):
   for x in xValues:
@@ -21,7 +21,7 @@ for num in range (1, 11):
     elif num == 2:
       yValuesFile.write(f"{3*x + 2}\n") #2
     elif num == 3:
-      yValuesFile.write(f"{x**2}\n") #3
+      yValuesFile.write(f"{x**2}\n") #30
     elif num == 4:
       yValuesFile.write(f"{x**3}\n") #4
     elif num == 5:
@@ -42,7 +42,7 @@ yValuesFile.close()
 def graphOne(start, end):
   yValues = []
   count = 0
-  with open("git-proj/yValues.txt", "r") as file:
+  with open("yValues.txt", "r") as file:
     for line in file:
       count = count + 1
       if count >= start and count < end:
